@@ -1,6 +1,7 @@
 # keggBlast
 
-A simple script to parse GenBank file, get protein sequences and blast them against KEGG database
+A simple script to parse GenBank file, get protein sequences and blast them against KEGG database and get a list of KOs that
+have an e-value less than 0.05.
 
 
 Required Packages
