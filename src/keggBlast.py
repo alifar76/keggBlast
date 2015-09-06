@@ -5,8 +5,6 @@ from bs4 import BeautifulSoup
 from Bio import SeqIO
 from datetime import datetime
 
-
-
 def getProt(protein_seq):
 	seq_data = open("sequence.gb", 'rU')
 	records = SeqIO.parse(seq_data, "gb")
@@ -17,7 +15,6 @@ def getProt(protein_seq):
 			except KeyError:
 				pass
 	return protein_seq
-
 
 def keggBlast(proteins,filename):
 	outfile = open(filename, "w")
@@ -51,7 +48,6 @@ def keggBlast(proteins,filename):
 			outfile.write(x+"\t"+y+"\n")
 	outfile.close()
 	return outfile
-					
 					
 if __name__ == '__main__':
 	startTime = datetime.now()		
