@@ -1,5 +1,6 @@
 import re
 from urllib2 import urlopen
+
 from ClientForm import ParseResponse
 from bs4 import BeautifulSoup
 from Bio import SeqIO
